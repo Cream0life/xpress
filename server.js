@@ -23,6 +23,11 @@ const userschema = new mongoose.Schema({
 
 const User = mongoose.model("User", userschema);
 
+
+app.get("/", (req, res) => {
+res.send("Hello, Express!");
+});
+
 app.post("/register", async (req, res) => {
   try {
     const { username, password } = req.body;
