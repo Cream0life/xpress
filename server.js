@@ -8,7 +8,7 @@ app.use(express.json());
 
 //Connect to MonogDB
 mongoose
-  .connect("mongodb://127.0.0.1/newapp", {
+  .connect("mongodb+srv://teststeven:admin123@cluster0.djw7ico.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
